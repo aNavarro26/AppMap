@@ -1,0 +1,164 @@
+.main-container {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.menu-main {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+#map {
+    width: 70%;
+    height: 100vh;
+    border-radius: 3vh;
+    border: 1px solid #ccc;
+}
+
+/* informació i filtres */
+.info-section {
+    background-color: #E0F7FA;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #80DEEA;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* (Tipus i Ordenació) */
+.filters-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.filters-row label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.filters-row select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Buscador de nom */
+.search-row input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Llistat de informació */
+#llistat {
+    background-color: #E1F5FE;
+    border: 1px solid #80DEEA;
+    min-height: 150px;
+    height: 40vh;
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+    overflow: scroll;
+}
+
+/* Footer amb total i botó de netejar */
+.info-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#totalElements {
+    font-weight: bold;
+}
+
+#clearList {
+    padding: 5px 10px;
+    background-color: #FFA726;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#clearList:hover {
+    background-color: #FF9800;
+}
+
+/* DropZone */
+.dropZone {
+    border: 2px dashed #81D4FA;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.dropZone:hover {
+    background-color: #B3E5FC;
+}
+
+.list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.espai {
+    background-color: #a0ffc8;
+    text-align: center;
+}
+
+.atraccio {
+    background-color: #ffffa0;
+}
+
+.museu {
+    background-color: #ffdca0;
+}
+
+.delete-button {
+    background-color: #f66;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #f33;
+}
+
+#tipusFilter,
+#ordenacioFilter,
+#nomFilter {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#llistat,
+.list-container {
+    font-size: 0.9em;
+}

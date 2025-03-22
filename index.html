@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Mapa</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Filtres i llistat< -->
+        <div class="menu-main">
+            <div class="info-section">
+                <div class="filters-row">
+                    <label for="tipusFilter">Tipus:</label>
+                    <select id="tipusFilter">
+                        <!-- Es posa per el js -->
+                    </select>
+
+                    <label for="ordenacioFilter">Ordenació:</label>
+                    <select id="ordenacioFilter">
+                        <option value="asc">Ascendent</option>
+                        <option value="desc">Descendent</option>
+                    </select>
+                </div>
+
+                <div class="search-row">
+                    <input type="text" id="nomFilter" placeholder="Filtrar per nom..." />
+                </div>
+
+                <div id="llistat">
+                    No hi ha informació a mostrar
+                </div>
+
+                <div class="info-footer">
+                    <span id="totalElements">Total Elements: 0</span>
+                    <button id="clearList">Netejar tot</button>
+                </div>
+                <div id="paisInfo"></div>
+                <div class="dropZone">
+                    Arrossegar un fitxer CSV aquí per carregar la informació
+                </div>
+            </div>
+        </div>
+
+        <div id="map"></div>
+    </div>
+
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./scripts/const.js"></script>
+    <script src="./scripts/PuntInteres.js"></script>
+    <script src="./scripts/Map.js"></script>
+    <script src="./scripts/Atraccio.js"></script>
+    <script src="./scripts/Museu.js"></script>
+    <script src="./scripts/Excel.js"></script>
+    <script src="./scripts/App.js"></script>
+</body>
+
+</html>
